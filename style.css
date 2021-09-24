@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+:root{
+    --custombgc: #D1D5DB;
+    --customlight: #4B5563;
+    --customdark: #111827;
+}
+
+body {
+    background: var(--customlight);
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: var(--customdark);
+    border-radius: .5rem;
+    max-width: 500px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+input {
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 200px;;
+    
+}
+
+.empty {
+    padding-bottom: 2rem;
+}
+
+.footer {
+    background-color: var(--customdark);
+    border-radius: .5rem;
+    text-align: center;
+    padding: .1rem;
+    margin-top: 2rem;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Source Serif Pro', serif;
+  
+  }
+  
+  .footer-title {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  
+  .footer-links {
+    color: white;
+    text-decoration-line: none;
+    padding: 1rem;
+  }
+  
+  .unordered {
+    text-align: justify;
+  }
