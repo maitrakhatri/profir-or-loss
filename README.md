@@ -1,5 +1,6 @@
 # profir-or-loss
-
+## what it does
+The app calculates your net profit/loss amount and net profit/loss percentage.
 ## how to use
 - enter the Initial Price of the stock
 - enter the number of stocks bought
