@@ -20,7 +20,7 @@ function calculate() {
     if(netValue > 0) {
         
         var netProfit = netValue*sq;
-        var profitPercentage = (netProfit/ip)*100;
+        var profitPercentage = (netProfit/ip*sq)*100;
         showMessage("Your profit is: " + netProfit + " and Your profit perentage is: " + profitPercentage + "%");
         
     }
@@ -33,7 +33,7 @@ function calculate() {
     if(netValue < 0) {
         
         var netLoss = Math.abs(netValue*sq);
-        var lossPercentage = (netLoss/ip)*100;
+        var lossPercentage = (netLoss/ip*sq)*100;
         showMessage("Your loss is: " + netLoss + " and Your loss percentage is: " + lossPercentage + "%");
 
     }
