@@ -22,11 +22,13 @@ function calculate() {
         var netProfit = netValue*sq;
         var profitPercentage = ((cp-ip)/ip)*100;
         showMessage("Your profit is: " + netProfit + " and Your profit perentage is: " + profitPercentage + "%");
+        result.style.color = "green";
         
     }
 
     if(netValue == 0) {
-        showMessage("No profit No loss")
+        showMessage("No profit No loss");
+        result.style.color = "orange";
         
     }
 
@@ -35,6 +37,7 @@ function calculate() {
         var netLoss = Math.abs(netValue*sq);
         var lossPercentage = ((ip-cp)/ip)*100;
         showMessage("Your loss is: " + netLoss + " and Your loss percentage is: " + lossPercentage + "%");
+        result.style.color = "red";
 
     }
 
