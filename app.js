@@ -1,27 +1,27 @@
-var buyPrice = document.querySelector("#initial-price");
-var stockQuant = document.querySelector("#no-of-stocks");
-var currentPrice = document.querySelector("#current-price");
-var calculateButton = document.querySelector("#calculate-button");
-var result = document.querySelector("#result");
+const buyPrice = document.querySelector("#initial-price");
+const stockQuant = document.querySelector("#no-of-stocks");
+const currentPrice = document.querySelector("#current-price");
+const calculateButton = document.querySelector("#calculate-button");
+const result = document.querySelector("#result");
 
 function showMessage(message) {
     result.style.display = "block";
     result.innerText = message;
 }
 
-function calculate() {
+const calculate = () => {
 
-    var ip = Number(buyPrice.value);
-    var sq = Number(stockQuant.value);
-    var cp = Number(currentPrice.value);
+    const ip = Number(buyPrice.value);
+    const sq = Number(stockQuant.value);
+    const cp = Number(currentPrice.value);
 
-    var netValue = cp - ip;
+    const netValue = cp - ip;
 
     if(netValue > 0) {
         
-        var netProfit = netValue*sq;
-        var profitPercentage = ((cp-ip)/ip)*100;
-        showMessage("Your profit is: " + netProfit + " and Your profit perentage is: " + profitPercentage + "%");
+        const netProfit = netValue*sq;
+        const profitPercentage = ((cp-ip)/ip)*100;
+        showMessage(`Your profit is: ${netProfit} and Your profit perentage is: ${profitPercentage}%`);
         result.style.color = "green";
         
     }
@@ -34,16 +34,16 @@ function calculate() {
 
     if(netValue < 0) {
         
-        var netLoss = Math.abs(netValue*sq);
-        var lossPercentage = ((ip-cp)/ip)*100;
-        showMessage("Your loss is: " + netLoss + " and Your loss percentage is: " + lossPercentage + "%");
+        const netLoss = Math.abs(netValue*sq);
+        const lossPercentage = ((ip-cp)/ip)*100;
+        showMessage(`Your loss is: ${netLoss} and Your loss percentage is: ${lossPercentage}%`);
         result.style.color = "red";
 
     }
 
 }
 
-function clickHander(){
+const clickHander = () => {
 
     result.style.display = "none";
 
